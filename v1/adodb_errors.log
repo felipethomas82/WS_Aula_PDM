@@ -1,0 +1,1 @@
+(2016-01-08 00:35:05) mysql error: [1048: Column 'idUsuario' cannot be null] in EXECUTE("INSERT INTO comentarios_produto(idProduto, idUsuario, comentario) VALUES ('3',NULL,'Teste de comentario')")
