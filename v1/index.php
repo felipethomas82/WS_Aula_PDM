@@ -114,6 +114,21 @@ $app->post('/login', function() use ($app) {
         });
 
 
+$app->get('/posts', function() use ($app) {
+
+            $request = \Slim\Slim::getInstance()->request();
+            
+            $response = array();
+
+            $posts = new Posts();
+            
+            $response['error'] = false;
+            $response['posts'] = $posts->retornaPosts();
+
+
+            echoResponse(200, $response);
+        });
+
 
 /**
  * Dados do usuario
